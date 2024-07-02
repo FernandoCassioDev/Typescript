@@ -1,11 +1,14 @@
+//importa a pilha e o readline
 import leia = require("readline-sync");
 import { Stack } from "../interface/Stack";
 
+//variaveis globais
 let pilha = new Stack<string>(),
   continuar = true,
   entrada;
 
-while (continuar == true) {
+//executa o programa até o usuario escolher a opção 0  
+while (continuar) {
   console.log("************************************");
   console.log("\n1- Adicionar um novo livro na pilha");
   console.log("2 - Listar todos os livros da Pilha");
@@ -13,10 +16,12 @@ while (continuar == true) {
   console.log("0 - Sair");
   console.log("\n************************************");
 
+  //lê a opção escolhida pelo o usuario
   entrada = leia.questionInt("Digite um numero do menu: ", {
     limitMessage: "Digite um valor valido!",
   });
 
+  //realiza a operação escolhida pelo usuario
   switch (entrada) {
     case 1:
       let nome = leia.question("Digite o nome do livro: ", {
