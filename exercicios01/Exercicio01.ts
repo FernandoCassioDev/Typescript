@@ -11,4 +11,4 @@ for (let i = 0; i < 5; i++) {
 }
 
 console.table(cores);
-console.log(cores.sort().join(", "))
+console.log(cores.sort().join(", "));

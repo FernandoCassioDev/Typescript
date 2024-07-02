@@ -11,6 +11,6 @@ for (let i = 0; i < 10; i++) {
   );
 }
 
+let orderSet: Array<number> = Array.from(inteiros).sort(((a, b) => a - b))
 
-
-console.table(inteiros)
+console.table(orderSet)

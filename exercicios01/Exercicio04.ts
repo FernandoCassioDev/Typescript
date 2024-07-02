@@ -10,4 +10,3 @@ let entrada = readlinesync.questionInt(
 inteiros.has(entrada)
   ? console.log(`O número ${entrada} foi encontrado na collection!`)
   : console.log(`O número ${entrada} não foi encontrado na collection!`);
-
