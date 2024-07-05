@@ -9,6 +9,7 @@ let pilha = new Stack<string>(),
 
 //executa o programa até o usuario escolher a opção 0  
 while (continuar) {
+  //menu
   console.log("************************************");
   console.log("\n1- Adicionar um novo livro na pilha");
   console.log("2 - Listar todos os livros da Pilha");
